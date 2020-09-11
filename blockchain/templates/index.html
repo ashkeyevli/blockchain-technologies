@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type = "text/css" href="{% static 'css/styles.css'%}"/>
+
+    <title>Etherium to USD convertor</title>
+</head>
+<body>
+<form class="form-structor" method="GET" action="{% url 'get_usd'%}">
+	<div class="calculator">
+		<h2 class="form-title" id="signup">Etherium to USD convertor</h2>
+		<div class="form-holder">
+			<input type="text" class="input"  align="center" name="amount" id="amount" placeholder="Amount of Eths"/>
+            <input type="checkbox"  onchange="document.getElementById('convert').disabled = !this.checked;" id = "eth"/>
+            <label for = "eth"> Is it Etherium of Erherium classic?</label>
+            <button class="submit-btn" id="convert" disabled>Convert</button>
+
+		</div>
+        {% if error %}
+            <p style="background: white; border-radius: 13px; text-align: center">Error</p>
+        {% endif %}
+        {% if result %}
+            <p style="background: white; border-radius: 13px; text-align: center">{{amount}} Eths = {{ answer }} USD</p>
+        {% endif %}
+
+	</div>
+</form>
+</body>
+</html>

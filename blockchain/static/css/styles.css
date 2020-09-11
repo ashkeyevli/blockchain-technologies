@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+html,body {
+	position: relative;
+	min-height: 100vh;
+	background-color: #E1E8EE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-structor {
+    background-image: url("https://logodix.com/logo/1269690.png");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 800px;
+	border-radius: 15px;
+	height: 670px;
+	width: 510px;
+	position: relative;
+	overflow: hidden;}
+
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 65%;
+    z-index: 5;
+    -webkit-transition: all .3s ease;}
+.form-title {
+    color: black;
+    font-size: 1.7em;
+    text-align: center;}
+
+.form-holder {
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 50px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .3s ease;}
+.input {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 8px 40px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+center {
+    position: absolute;
+    top: calc(50% - 10%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 65%;
+    z-index: 5;
+    -webkit-transition: all .3s ease;}
+
+.submit-btn {
+    background-color: #6B92A4;
+    color: white;
+    border:0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    padding: 9px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .3s ease;
+
+}
+
+
+
+
+
+
+
+
